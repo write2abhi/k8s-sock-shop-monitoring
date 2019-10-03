@@ -99,6 +99,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: carts
+  annotations:
+    prometheus.io/scrape: "true"
   labels:
     name: carts
   namespace: sock-shop
@@ -188,6 +190,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: catalogue
+  annotations:
+    prometheus.io/scrape: "true"
   labels:
     name: catalogue
   namespace: sock-shop
@@ -234,6 +238,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: front-end
+  annotations:
+    prometheus.io/scrape: "true"
   labels:
     name: front-end
   namespace: sock-shop
@@ -347,6 +353,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: orders
+  annotations:
+    prometheus.io/scrape: "true"
   labels:
     name: orders
   namespace: sock-shop
@@ -393,6 +401,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: payment
+  annotations:
+    prometheus.io/scrape: "true"
   labels:
     name: payment
   namespace: sock-shop
@@ -430,6 +440,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: queue-master
+  annotations:
+    prometheus.io/scrape: "true"
   labels:
     name: queue-master
   annotations:
@@ -537,6 +549,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: shipping
+  annotations:
+    prometheus.io/scrape: "true"
   labels:
     name: shipping
   namespace: sock-shop
@@ -640,6 +654,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: user
+  annotations:
+    prometheus.io/scrape: "true"
   labels:
     name: user
   namespace: sock-shop
